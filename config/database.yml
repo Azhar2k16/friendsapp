@@ -1,25 +1,19 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  database: friendapp
+ 
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
-  database: friendapp_dev
-  username: postgres
-  host: localhost
-  password: qweasd123
-
+  database: friendsapp_dev
+ 
 test:
   <<: *default
-  database: friendappapp_test
-  username: postgres
-  host: localhost
-  password: qweasd123
+  database: friendsapp_test
 
 production:
   <<: *default
-  database: friendapp_production
-  # username: hadiapp
-  # password: <%= ENV['HADIAPP_DATABASE_PASSWORD'] %>
+  database: friendsapp_production
+  username: postgres
+  password: <%= ENV['PGSQL_DATABASE_PASSWORD'] %>
