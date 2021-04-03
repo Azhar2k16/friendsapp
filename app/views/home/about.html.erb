@@ -1,4 +1,6 @@
-<div class="jumbotron">
+<div class="container">
+  <br>
+  <div class="jumbotron">
   <h1 class="display-4">About BuddyTracker App</h1>
   <p class="lead">Rails App Specs
   -Ruby 2.7
@@ -6,5 +8,6 @@
   -OS Windows 8.1
   - Devise Gem</p>
   <hr class="my-4">
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg"%>
+  </div>
 </div>
