@@ -1,20 +1,22 @@
-default: &default
-  adapter: postgresql
-  encoding: unicode
+# default: &default
+#   adapter: postgresql
+#   encoding: unicode
  
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
-  # <<: *default
   adapter: sqlite3
   database: friendsapp_dev
+  encoding: unicode
  
 test:
   adapter: sqlite3
-  database: friendsapp_dev
+  database: friendsapp_test
+  encoding: unicode
 
 production:
-  <<: *default
+  adapter: postgresql
   database: friendsapp_production
-  username: postgres
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   password: <%= ENV['PGSQL_DATABASE_PASSWORD'] %>
+  encoding: unicode
