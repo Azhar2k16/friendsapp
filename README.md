@@ -1,24 +1,11 @@
-# README
+************   A Fully DataBase Backed-up Ruby on Rails Web Application    ********
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The Web App contains the following:
 
-Things you may want to cover:
+* Full Sign in/out and Sign up functionality 
 
-* Ruby version
+* Users can update their current profile
 
-* System dependencies
+* Users can |'Create' | 'Read' | 'Update' | 'Delete' |  ==> CRUD
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Used Bootstrap 4.x & 5.x.
