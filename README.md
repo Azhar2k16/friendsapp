@@ -1,6 +1,6 @@
-************   A Fully DataBase Backed-up Ruby on Rails Web Application    ********
+**BuddyTracker App --->  A Fully DataBase Backed-up Ruby on Rails Web Application
 
-The Web App contains the following:
+ The Web App contains the following:
 
 * Full Sign in/out and Sign up functionality 
 
@@ -8,4 +8,6 @@ The Web App contains the following:
 
 * Users can |'Create' | 'Read' | 'Update' | 'Delete' |  ==> CRUD
 
-* Used Bootstrap 4.x & 5.x.
+* Used Bootstrap 4.x & 5.x
+
+[Demo](https://buddy-app-2k21.herokuapp.com/)
