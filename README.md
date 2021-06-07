@@ -1,4 +1,4 @@
-**BuddyTracker App --->  A Fully DataBase Backed-up Ruby on Rails Web Application
+**BuddyTracker App --->  A Fully DataBase Backed-up Ruby on Rails Web Application**
 
  The Web App contains the following:
 
@@ -10,4 +10,4 @@
 
 * Used Bootstrap 4.x & 5.x
 
-[Demo](https://buddy-app-2k21.herokuapp.com/)
+Click on the Demo Button to see the app: [Demo](https://buddy-app-2k21.herokuapp.com/)
