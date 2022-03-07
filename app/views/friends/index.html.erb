@@ -41,6 +41,19 @@
     <h1 class="display-4">BuddyTracker | App</h1>
     <p class="lead">A Simple Rails 6 |C.R.U.D| App deployed on Heroku | Users Can Sign Up and Add > Edit > Destroy Friends.</p>
     <hr class="my-4">
+    <%= link_to new_user_session_path, class: 'btn btn-outline-primary' do %>
+    <div class="fa fa-sign-in-alt"></div>
+    <b>Sign In</b>
+    <% end %>
+
+
+    <%= link_to new_user_registration_path, class: 'btn btn-outline-primary' do%>
+    <div class="fas fa-user-plus"></div>
+    <b>Sign Up</b>
+    <% end %>
+
+
+    
   </div>
   </div>
 <%end%>

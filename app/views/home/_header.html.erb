@@ -1,6 +1,11 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
-    <%= link_to 'BuddyTracker', root_path, class: 'navbar-brand' %>
+    <%= link_to root_path, class: 'navbar-brand' do %>
+    <div class="fab fa-untappd"></div>
+    <b>BuddyTracker</b>
+    <% end %>
+
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -9,44 +14,58 @@
 
          
 
-        <li class="nav-item">
-          <%= link_to 'About Us', home_about_path, class: 'nav-link' %>
-        </li>
+
+        <%= link_to home_about_path, class: "nav-link" do %>
+          <div class="far fa-address-card"></div>
+          <b>About us</b>
+        <% end %>
 
        
         <% if user_signed_in? %>
 
           <li class="nav-item">
-            <%= link_to 'Add Friend', new_friend_path, class: 'nav-link' %>
+            <%= link_to new_friend_path, class: 'nav-link' do %>
+            <div class="fas fa-user-friends"></div>
+            <b>Add Friend</b>
+           <% end %>
           </li>
                
 
           <li class="nav-item">
-            <%= link_to 'Edit Profile', edit_user_registration_path, class: 'nav-link' %>
+            <%= link_to edit_user_registration_path, class: 'nav-link' do %>
+            <div class="fas fa-user"></div>
+            <b>Edit Profile</b>
+           <% end %>
           </li>
 
           <li class="nav-item">
-            <%= link_to 'Sign Out',  destroy_user_session_path, method: :delete, class: 'nav-link' %>
+            <%= link_to destroy_user_session_path, method: :delete, class: 'nav-link' do %>
+            <div class="fa fa-sign-out-alt"></div>
+            <b>Sign Out</b>
+            <% end %>
           </li>
 
         <% else %>
 
           <li class="nav-item">
-            <%= link_to 'Sign In',  new_user_session_path, class: 'nav-link' %>
+            
+            <%= link_to new_user_session_path, class: 'nav-link' do %>
+              <div class="fa fa-sign-in-alt"></div>
+              <b>Sign In</b>
+            <% end %>
           </li>
 
           <li class="nav-item">
-            <%= link_to 'Sign Up',  new_user_registration_path, class: 'nav-link' %>
+            <%= link_to new_user_registration_path, class: 'nav-link' do %>
+            <div class="fas fa-user-plus"></div>
+            <b>Sign Up</b>
+            <% end %>
           </li>
 
           
         <% end %>
 
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
