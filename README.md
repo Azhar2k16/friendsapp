@@ -10,4 +10,4 @@
 
 * Used Bootstrap 4.x & 5.x
 
-Click on the Demo Button to see the app: [Demo](https://buddy-app-2k21.herokuapp.com/)
+Click on the Demo Button to see the app: [Demo](https://friendsapp2k16-0e79b9c5902a.herokuapp.com/)
